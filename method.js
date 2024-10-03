@@ -1,5 +1,5 @@
 //  how to copy an array
-var a =[ 1 , 2 , 3 , 4 ]
+var a =[ 1 ,  3 ,2 , 4 ]
 // push - Adds one or more elements to the end of an array.
 a.push(4 , 8)
 console.log(a) // [ 1 , 2 , 3 , 4 , 4, 8]
@@ -54,3 +54,38 @@ console.log(sum);
 const index = a.findIndex(i=>i>2)
 
 console.log(a,index);
+// includes - : Checks if an array contains a specified element.
+
+const hasten=a.includes(10)
+console.log(hasten);
+//  false
+// sort -  Sorts the elements of an array.
+const d =[4,2,1,3]
+d.sort()
+console.log(d);
+//  [1, 2, 3, 4]
+// reverse -Reverses the order of the elements in an array.
+d.reverse()
+console.log(d);
+//  [4, 3, 2, 1]
+// join - Joins all elements into a string, separated by a specified delimiter.
+const str =d.join('=')
+console.log(str);
+// 4=3=2=1
+// forEach-Executes a provided function once for each array element.
+d.forEach(i=>console.log(i))
+// 4 , 3 , 2 , 1
+// every - Tests whether all elements pass the test implemented by a provided function.
+
+ const lesthantwo=d.every(num=> num>0)
+ console.log(lesthantwo);
+//  true
+// flat - Flattens a nested array into a single-level array.
+const arr = [1, 2, [3, 4, [5, 6]]]
+const flat = arr.flat(2)
+console.log(flat);
+//  [1, 2, 3, 4, 5, 6]
+// toString-  Converts an array to a string, with elements separated by commas.
+
+const arra = [1, 2, 3];
+console.log(arra.toString()); // "1,2,3"
